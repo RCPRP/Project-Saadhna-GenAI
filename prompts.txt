@@ -1,0 +1,29 @@
+create a prompt for a image generation model keeping all in mind 
+Read the following general product attributes and legal considerations before you use Imagen on Vertex AI.
+
+Image and text filters and outputs: Images (generated or uploaded) through Imagen on Vertex AI are assessed against safety filters. Imagen aims to filter out (generated or uploaded) that violate our acceptable use policy (AUP) or additional Generative AI product restrictions. In addition, our generative imagery models are intended to generate original content and not replicate existing content. We've designed our systems to limit the chances of this occurring, and we will continue to improve how these systems function. Like all cloud service providers, Google maintains an Acceptable Use Policy that prohibits customers from using our services in ways that infringe third-party IP rights.
+People generation now supported: This feature enables the generation of photorealistic, synthetic faces, but does not support the generation of celebrities. Be aware that in some cases, synthetic faces may look similar to individuals. In the event you think this feature is outputting bad outputs, report this using the abuse reporting mechanism mentioned at Overview of Generative AI on Vertex AI.
+Generation of children: This feature enables selected approved users to generate photorealistic, synthetic faces of children. To request the ability to use this feature, contact your Google Cloud account team.
+Configurable safety filter thresholds: Google blocks model responses that exceed the designated confidence scores for certain safety attributes. To request the ability to modify a safety threshold, contact your Google Cloud account team.
+Text addition supported on certain model versions: Imagen does not support adding text to images (uploaded or generated) using a text prompt when using the imagegeneration@004 or lower model versions.
+Report suspected abuse: You can report suspected abuse of Imagen on Vertex AI or any generated output that contains inappropriate material or inaccurate information using the Report suspected abuse on Google Cloud form.
+Trusted Tester Program opt-out: If you previously opted in to permit Google to use your data to improve pre-GA AI/ML services as part of the Trusted Tester Program terms, you can opt out using the Trusted Tester Program - Opt Out Request form.
+Safety filters
+Text prompts provided as inputs and images (generated or uploaded) through Imagen on Vertex AI are assessed against a list of safety filters, which include 'harmful categories' (for example, violence, sexual, derogatory, and toxic). These safety filters aim to filter out (generated or uploaded) content that violates our Acceptable Use Policy (AUP), Generative AI Prohibited Use Policy or our AI Principles.
+
+If the model responds to a request with an error message such as "The prompt couldn't be submitted" or "it might violate our policies", then the input is triggering a safety filter. If fewer images than requested are returned, then some generated output are blocked for not meeting safety requirements.
+
+You can choose how aggressively to filter sensitive content by adjusting the safetySetting parameter.
+
+
+
+
+prompt : Hi there! It's lovely to have you here today. Now, close your eyes and imagine you're at a magical picnic with your friends. The sun is shining, birds are singing, and the air smells like freshly baked cookies. Suddenly, you realize there aren't enough cookies for everyone! What do you do?
+ChatGPT said:
+ChatGPT
+Sure! Here’s a revised prompt for an image generation model, keeping all safety and legal considerations in mind:
+
+Prompt:
+"Imagine a vibrant picnic scene on a sunny day, filled with diverse friends enjoying nature. The air is filled with the scent of freshly baked cookies, and there are colorful picnic blankets spread across a lush green park. Everyone is laughing and having fun, but suddenly you notice there aren't enough cookies to share! What creative solutions do your friends come up with to ensure everyone gets a treat?"
+
+This prompt focuses on a positive scenario while avoiding any sensitive content, making it suitable for the image generation model.
